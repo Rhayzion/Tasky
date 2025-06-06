@@ -28,4 +28,4 @@ Tasky is a sleek and modern Todo List application built with React. It features 
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/yourusername/tasky.git
+ gh repo clone Rhayzion/Tasky
