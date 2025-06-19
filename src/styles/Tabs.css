@@ -1,0 +1,36 @@
+/* src/styles/Tabs.css */
+.tabs {
+  display: flex;
+  gap: 0.3rem;
+  background-color: #252525;
+  padding: 0.3rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.tab-button {
+  flex: 1;
+  background: none;
+  border: none;
+  color: #e0e0e0;
+  font-size: clamp(0.8rem, 1.2vw, 0.9rem);
+  padding: clamp(0.6rem, 1vw, 0.7rem);
+  cursor: pointer;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  transition: all 0.3s ease;
+}
+
+.tab-button:hover {
+  background: #0bff1a1a;
+  color: #0bff1a;
+}
+
+.tab-button.active {
+  background: #0bff1a80;
+  color: #fff;
+}

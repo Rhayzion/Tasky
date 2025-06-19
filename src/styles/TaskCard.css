@@ -1,0 +1,72 @@
+/* src/styles/TaskCard.css */
+.task-card {
+  background-color: #252525;
+  border: 1px solid #ffffff1a;
+  border-radius: 6px;
+  padding: clamp(0.8rem, 1.5vw, 1rem);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  transition: border-color 0.3s ease;
+}
+
+.task-card:hover {
+  border-color: #0bff1a;
+}
+
+.mark-button {
+  background: none;
+  border: none;
+  color: #e0e0e0;
+  cursor: pointer;
+  font-size: clamp(0.8rem, 1.2vw, 0.9rem);
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.mark-icon {
+  transition: color 0.3s ease;
+}
+
+.mark-icon.completed {
+  color: #0bff1a;
+}
+
+.mark-button:hover .mark-icon {
+  color: #0bff1a80;
+}
+
+.task-content {
+  flex: 1;
+}
+
+.task-title {
+  font-size: clamp(0.8rem, 1.2vw, 0.9rem);
+  margin: 0;
+  color: #e0e0e0;
+}
+
+.task-title.completed {
+  text-decoration: line-through;
+  color: #ffffff86;
+}
+
+.task-due {
+  font-size: clamp(0.7rem, 1vw, 0.8rem);
+  color: #ffffff86;
+  margin: 0.2rem 0 0;
+}
+
+.delete-button {
+  background: none;
+  border: none;
+  color: #ff4d4d;
+  cursor: pointer;
+  font-size: clamp(0.8rem, 1.2vw, 0.9rem);
+  transition: color 0.3s ease;
+}
+
+.delete-button:hover {
+  color: #ff4d4dcc;
+}
